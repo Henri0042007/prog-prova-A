@@ -1,0 +1,24 @@
+<script>
+    //Problema: Contar palavras com mais de 4 letras
+    /*
+    Dada a lista de palavras, conte quantas palavras possuem mais de 4 letras.
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    */
+    //AQUI, USE FOR...OF!
+    
+    //Entrada
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    let array = [];
+
+
+    //Processamento
+    for(let contador of lista) {
+        if (contador.length > 4) {
+            array.push(contador)
+        }
+    }
+
+    //Saída
+    document.write(array.join(", "));
+
+</script>

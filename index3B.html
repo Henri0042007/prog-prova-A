@@ -1,0 +1,25 @@
+<script>
+    //Problema: Somar os números ímpares de 1 até N
+    /*
+    Peça para o usuário informar um número N e some todos os números ímpares de 1 até N, apresentando o resultado final desta somatória.
+    */
+    //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
+
+    //Entrada
+   const n = Number(prompt(`Fale um numero`))
+   let lista = [];
+   let soma = 0;
+
+    //Processamento
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 != 0) {
+            soma += i; 
+        }
+        
+    }
+    
+    //Saída
+    document.write(soma)
+
+    
+</script>

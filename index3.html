@@ -1,0 +1,22 @@
+<script>
+    //Problema: Imprimir múltiplos de 3
+    /*
+    Peça para o usuário informar um número inteiro positivo N.
+    Agora, imprima todos os múltiplos de 3 entre 1 e N, inclusive.
+    */
+    //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
+
+    //Entrada
+    const n = Number(prompt(`Fale um numero inteiro positivo`))
+    let lista = []; 
+    
+    //Processamento
+    for (let h = 1; h <= n; h++) {
+        if ( h % 3 == 0) {
+            lista.push(h)
+        }
+    }
+    //Saída
+    document.write(lista.join(", "))
+  
+</script>
